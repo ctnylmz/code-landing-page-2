@@ -7,13 +7,13 @@
     --color-white: #FFFFFF;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     max-width: 1110px;
     margin: 0 auto;
     width: 95%;
@@ -21,57 +21,107 @@
 
 #hero {
     background: linear-gradient(rgba(31, 35, 39, 0.6), rgba(31, 35, 39, 0.9)), url("/assets/img/hero.png");
-    background-size: cover; /* isteğe bağlı */
-    background-position: center; /* isteğe bağlı */
+    background-size: cover;
+    /* isteğe bağlı */
+    background-position: center;
+    height: 700px;
 
-    header{
-       padding-top: 30px;
-       padding-bottom: 125px;
+    /* isteğe bağlı */
+
+    header {
+        padding-top: 30px;
+        padding-bottom: 125px;
     }
 
-    .hero{
+    .hero {
         color: var(--color-white);
-        padding-bottom: 125px;
-        h6{
+        padding-bottom: 182px;
+
+        h6 {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 5px;
         }
-        h1{
+
+        h1 {
             font-size: 64px;
             font-weight: bold;
             margin-bottom: 10px;
             max-width: 20ch;
             line-height: 1.1;
         }
-        p{
+
+        p {
             font-size: 24px;
             margin-bottom: 30px;
             max-width: 57ch;
             line-height: 1.1;
         }
 
-        button{
+        button {
             display: flex;
             align-items: center;
             gap: 10px;
-            
+
             cursor: pointer;
 
             background-color: var(--color-primary-dark);
             padding: 20px;
             border-radius: 40px;
-            border: none; 
+            border: none;
 
-           
-            span{
+
+            span {
                 color: var(--color-white);
                 font-size: 16px;
                 line-height: 0.8;
                 display: block;
             }
 
-          
+            &:hover {
+                background-color: var(--color-secondary-dark);
+                transition: background-color 0.3s linear;
+            }
         }
     }
+
 }
+
+#brand {
+    background-color: var(--color-secondary-dark);
+    padding: 60px 0;
+    color: var(--color-white);
+    height: 200px;
+
+    .brand-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .brand-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .card-wrapper {
+                display: flex;
+                flex-direction: column;
+
+                 .title {
+                    font-size: 36px;
+                    font-weight: bold;
+                    line-height: 1.1;
+                    width: 10ch;
+                }
+
+                .text{
+                    font-size: 24px;
+                    font-weight: bold;
+                    line-height: 1.1;
+                }
+            }
+        }
+    }
+
+}
+
