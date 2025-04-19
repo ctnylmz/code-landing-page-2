@@ -1,0 +1,77 @@
+:root {
+    --color-primary-dark: #E11B19;
+    --color-secondary-dark: #191C1F;
+    --color-tertiary-dark: #1F2327;
+    --color-gray-dark: #3C3C3C;
+    --color-gray-light: #F9F9F9;
+    --color-white: #FFFFFF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+#hero {
+    background: linear-gradient(rgba(31, 35, 39, 0.6), rgba(31, 35, 39, 0.9)), url("/assets/img/hero.png");
+    background-size: cover; /* isteğe bağlı */
+    background-position: center; /* isteğe bağlı */
+
+    header{
+       padding-top: 30px;
+       padding-bottom: 125px;
+    }
+
+    .hero{
+        color: var(--color-white);
+        padding-bottom: 125px;
+        h6{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        h1{
+            font-size: 64px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            max-width: 20ch;
+            line-height: 1.1;
+        }
+        p{
+            font-size: 24px;
+            margin-bottom: 30px;
+            max-width: 57ch;
+            line-height: 1.1;
+        }
+
+        button{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            cursor: pointer;
+
+            background-color: var(--color-primary-dark);
+            padding: 20px;
+            border-radius: 40px;
+            border: none; 
+
+           
+            span{
+                color: var(--color-white);
+                font-size: 16px;
+                line-height: 0.8;
+                display: block;
+            }
+
+          
+        }
+    }
+}
