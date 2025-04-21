@@ -102,10 +102,12 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            
 
             .card-wrapper {
                 display: flex;
                 flex-direction: column;
+               
 
                  .title {
                     font-size: 36px;
@@ -123,5 +125,41 @@
         }
     }
 
+}
+
+#facilities{
+    background-color: var(--color-tertiary-dark);
+    padding: 164px 0 60px 0 ;
+
+    .facilities-wrapper{
+        display: flex;
+        align-items: center;
+      
+        gap: 123px;
+
+        .context{
+            color: var(--color-white);
+            .small-title{
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            h1{
+                font-size: 36px;
+                font-weight: bold;
+                width: 18ch;
+                line-height: 0.8;
+                margin-bottom: 25px;
+
+            }
+            span {
+                display: flex;
+                gap: 15px;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 12px;
+            }
+        }
+    }
 }
 
